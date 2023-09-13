@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Register</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="register.css">
+  </head>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.jpg" alt="">
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Blog List Fullwidth</a>
+                        <a class="dropdown-item" href="#">Blog Grird Page</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Login</a>
+                        <a class="dropdown-item" href="#">Register</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="link mr-5">
+                <i class="fa-solid fa-cart-shopping mr-4"></i>
+                <i class="fas fa-search mr-4"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+        
+      </nav>
+</header>
+
+    <div id="carouselId" class="carousel slide " data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselId" data-slide-to="1"></li>
+            <li data-target="#carouselId" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active ">
+              <img class="w-100" src="img/banner.jpg" alt="First slide">
+              <div class="carousel-caption d-none d-md-block mb-5 m-5">
+                  <h2 class="different-title mb-4">Login-Register</h2>
+                  <a name="" id="" class="btn" href="../home/index.html" role="button">Home</a>
+                  <!-- <h2 class="sub-title">2022 Flower Trend</h2> -->
+              </div>
+          </div>
+      </div>
+      <div class="reg container">
+        <div class="titile-login row justify-content-center mt-5 mb-5">
+            <h2><b>Create Account</b></h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="formregister" method="Post" onsubmit="return submitForm()">
+                    <div class="form-group l-g">
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                            placeholder="First name" name="email">
+                    </div>
+                    <div class="form-group l-g">
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                            placeholder="Last name" name="email">
+                    </div>
+                    <div class="form-group l-g">
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                            placeholder="Email or Username" name="email">
+                    </div>
+                    <div class="form-group l-g">
+                        <input type="password" class="form-control" name="password" id="password"
+                            placeholder="Enter your Password">
+                    </div>
+                    <div class="text-center mt-5">
+                        <button class="btn-danger btn-block text-center" id="submit" type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        const submitForm = (event) => {
+            event.preventDefault();
+
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            const err1 = document.getElementById("err1");
+            const err2 = document.getElementById("err2");
+
+            if (email === "") {
+                err1.style.display = "block";
+            } else {
+                err1.style.display = "none";
+            }
+
+            if (password === "") {
+                err2.style.display = "block";
+            } else {
+                err2.style.display = "none";
+            }
+        };
+
+        const form = document.getElementById("formregister");
+        form.onsubmit = submitForm;
+
+    </script>
+
+    <footer class="bg-dark text-light py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="py-3"></h2>
+                    <img class="card-img-top w-75 mb-4"
+                            src="img/logofooter.jpg" 
+                            alt="">
+                    <p>Lorem Khaled Ipsum is a major key to success. To be successful you’ve got to work hard you’ve got to make it.</p>
+                    <p>See Information</p>
+                    <p>123, ABC, Road ##, Main City, Your</p>
+                    <p>Phone: 01234 567 890</p>
+                    <p>Email: https://example.com</p>
+                    <p></p>
+                    </p>
+                </div>
+                <div class="col-md-8">
+                    <h2  class="py-3">Liên hệ</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.6554349754865!2d105.78180671540252!3d21.046468592548386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab3277f870d7%3A0xf27837785a779a8a!2zMjM2IEhvw6BuZyBRdeG7kWMgVmnhu4d0LCBD4buVIE5odeG6vywgQ-G6p3UgR2nhuqV5LCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1676339695784!5m2!1svi!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+  <body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

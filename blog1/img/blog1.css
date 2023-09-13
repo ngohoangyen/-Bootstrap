@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,400;0,700;1,700&display=swap');
+body {
+    background: #f6f6f6 ;
+    font-family: 'popins ';
+    color: #484848;
+}
+.different-title {
+    font-family: 'great vibes';
+    font-size: 50px; 
+    color: rgb(217, 77, 100);
+}
+.sub-title{
+    font-family: 'poppins' ;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+}
+.title2{
+    font-family: 'great vibes';
+    font-size: 35px; 
+    color: rgb(217, 77, 100);
+}
+
+.title1{
+    font-family: 'poppins' ;
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+}
+
+.card{
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.3 );
+}
+
+.card-title{
+    color: #010101;
+
+}
+.text-hover-danger{
+    transition: 0.4s;
+}
+.text-hover-danger:hover{
+    color: #E72463;
+}
+a{
+    color: #010101;
+}

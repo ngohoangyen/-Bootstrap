@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,400;0,700;1,700&display=swap');
+.different-title {
+    font-family: 'great vibes';
+    font-size: 40px; 
+    color: rgb(217, 77, 100);
+}
+.sub-title{
+    font-family: 'poppins' ;
+    color: rgb(255, 255, 255);
+     font-size: 45px;
+}
+.title2{
+    font-family: 'great vibes';
+    font-size: 20px; 
+    color: rgb(217, 77, 100);
+}
+
+.title1{
+    font-family: 'poppins' ;
+    color: rgb(0, 0, 0);
+     font-size: 45px;
+}
+
+.login-register-wrapper {
+    background: #f6f6f6 none repeat scroll 0 0;
+    padding: 37px 40px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.flosun-button.secondary-btn.theme-color {
+    position: relative;
+    background: #E72463;
+    color: #ffffff;
+    z-index: 1;
+}
+/* .after, ::before {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+.container.custom-area .row {
+    margin-right: -15px;
+    margin-left: -15px;
+} */
